@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
 }
 
-input, textarea {
+input[type="text"], input[type="email"], textarea, select {
   display: block;
   margin: .5rem;
 }
