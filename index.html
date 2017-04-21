@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Week 2 Responsive Web Design</title>
-    <link rel="stylesheet" href="./css/master.css">
-  </head>
-  <body>
-    <h1>Responsive Web Design</h1>
-    <p>Reponsive web design solves a big problems such as
-      slow performance, layouts that only work on limited devices,
-      and content that is only accessible to some.</p>
 
-    <p>Users hate waiting.  When they have to wait more than two seconds for a page to load they are very willing to
-      abandon your site and find another more responsive site.  In additional to the initial page load, users can
-      run into interaction delays as they navigate or submit requests.  A responsive web design insures
-      a page loads quickly and responds to user requests quickly.</p>
+<head>
+  <meta charset="utf-8">
+  <title>Week 2 Responsive Web Design</title>
+  <link rel="stylesheet" href="./css/master.css">
+</head>
 
-      <p>
-      Secondly, responsive web design solves the problem with programming customizations for an ever growing list of screen sizes and resolutions
-      for phones, tablets, desktops, and big screen TVs.  Code is no longer fragmented between mobile and desktop libraries.
-      Pages are no longer microscopic on ultra high definition screens because relative sizing in CSS.
-      Similarly when a page is viewed on very small screens
-      content to longer off screen and only viewable by using horizontal scroll bars.  Content now adapts the the given screen and can take
-      advantage of touch capabilities.
-      In additional to various screen sizes, devices can be viewed in different orientations.  A responsive web design
-      considers for and adjusts content to the device orientation.</p>
+<body>
+  <h1>Responsive Web Design</h1>
 
-      <p>Readable fonts, colors</p>
+  <p>Reponsive web design solves a big problems such as slow performance,
+    layouts that only work on limited devices, and content that is only
+    accessible to some and appear inconsistently between different browsers.</p>
 
-      <p>
-      Thirdly, responsive web design bring accessibility when technology is lacking or when users have physical challenges.
-      When javascipt is turned off or a user is on a older browser or using a screen reader,
-      a responsive web design still works and provide meaningful content to all users including accessibility challenged users who may be color blind or not be able to see.  
-    </p>
+  <p>Users hate waiting. When they have to wait more than two seconds for a page
+    to load they are very willing to abandon your site and find another more
+    responsive site. In additional to the initial page load, users can run into
+    interaction delays as they navigate or submit requests. A responsive web
+    design insures a page loads quickly and responds to user requests quickly.</p>
 
-    <p>
-      Finally (with normalize.css) responsive web design gives (as much as possible) a consistent user experience without using customized code.
-    </p>
+  <p>Secondly, responsive web design solves the problem with programming
+    customizations for an ever growing list of screen sizes and resolutions for
+    phones, tablets, desktops, and big screen TVs. Code is no longer fragmented
+    between mobile and desktop libraries.  Pages are no longer microscopic on
+    ultra high definition screens because relative sizing in CSS. Similarly when
+    a page is viewed on very small screens content to longer off screen and only
+    viewable by using horizontal scroll bars. Content now adapts the the given
+    screen and can take advantage of touch capabilities. In addition to various
+    screen sizes, devices can be viewed in different orientations. A responsive
+    web design considers for and adjusts content to the device orientation.</p>
+
+  <p>Thirdly, responsive web design bring accessibility when technology is
+    lacking or when users have physical challenges. When javascipt is turned off
+    or a user is on a older browser or using a screen reader, or when a font is
+    not available, a responsive web design still works and provide meaningful
+    content to all users including accessibility challenged users who may be
+    color blind or completely blind.
+  </p>
+
+  <p>Finally, a responsive web design gives (as much as possible) a consistent 
+    user experience without using customized code.
+  </p>
 
 
-    <form>
-      <label for="why-interested">
+  <form>
+    <label for="why-interested">
         Why are you interested in making your website responsive?</label>
-      <textarea name="why-interested" id="why-interested" rows="8" cols="80"></textarea>
+    <textarea name="why-interested" id="why-interested" rows="8" cols="80"></textarea>
 
-      <label for="biggest-concern">What is your biggest concern with your current website?</label>
-      <textarea name="biggest-concern" id="biggest-concern" rows="8" cols="80"></textarea>
+    <label for="biggest-concern">What is your biggest concern with your current website?</label>
+    <textarea name="biggest-concern" id="biggest-concern" rows="8" cols="80"></textarea>
 
-      <label for="email">email</label>
-      <input type="email" name="email" id="email" value="">
+    <label for="email">email</label>
+    <input type="email" name="email" id="email" value="">
 
-      <label for="visitor-count">How many unique visitors does your website receive daily?</label>
-      <input type="number" name="visitor-count" id="visitor-count" value="">
+    <label for="visitor-count">How many unique visitors does your website receive daily?</label>
+    <input type="number" name="visitor-count" id="visitor-count" value="">
 
 
-      <fieldset>
-        <legend>What technologies do you use on your site?</legend>
+    <fieldset>
+      <legend>What technologies do you use on your site?</legend>
 
-        <input type="checkbox" id="asp" name="asp" value="1">
-        <label for="asp">asp.net</label>
+      <input type="checkbox" id="asp" name="asp" value="1">
+      <label for="asp">asp.net</label>
 
-        <input type="checkbox" id="mvc" name="mvc" value="1">
-        <label for="mvc">asp.net/MVC</label>
+      <input type="checkbox" id="mvc" name="mvc" value="1">
+      <label for="mvc">asp.net/MVC</label>
 
-        <input type="checkbox" id="php" name="php" value="1">
-        <label for="php">php</label>
+      <input type="checkbox" id="php" name="php" value="1">
+      <label for="php">php</label>
 
-        <input type="checkbox" id="js" name="js" value="1">
-        <label for="js">javascript</label>
-      </fieldset>
+      <input type="checkbox" id="js" name="js" value="1">
+      <label for="js">javascript</label>
+    </fieldset>
 
-      <fieldset>
-        <legend>What database do you use on your backend?</legend>
-        <input type="radio" id="ms-sql" name="sql" value="ms-sql">
-        <label for="ms-sql">Microsoft SQL</label>
+    <fieldset>
+      <legend>What database do you use on your backend?</legend>
+      <input type="radio" id="ms-sql" name="sql" value="ms-sql">
+      <label for="ms-sql">Microsoft SQL</label>
 
-        <input type="radio" id="my-sql" name="sql" value="my-sql">
-        <label for="my-sql">My SQL</label>
+      <input type="radio" id="my-sql" name="sql" value="my-sql">
+      <label for="my-sql">My SQL</label>
 
-        <input type="radio" checked id="no-sql" name="sql" value="no-sql">
-        <label for="no-sql">No sql</label>
-      </fieldset>
+      <input type="radio" checked id="no-sql" name="sql" value="no-sql">
+      <label for="no-sql">No sql</label>
+    </fieldset>
 
-      <label for="server"></label>
-      <select class="" name="server" id="server">
+    <label for="server"></label>
+    <select class="" name="server" id="server">
         <option value="i">Internet Information Services (IIS)</option>
         <option value="a">Apache</option>
         <option value="j">Sun Java System Web Server</option>
@@ -91,13 +96,14 @@
         <option value="l">LightSpeed Web Server</option>
       </select>
 
-      <label for="zipcode">Zip Code</label>
-      <input type="text" name="zip-code" id="zipcode" pattern="^[0-9]{5}(?:-[0-9]{4})?$" title="Zip code">
+    <label for="zipcode">Zip Code</label>
+    <input type="text" name="zip-code" id="zipcode" pattern="^[0-9]{5}(?:-[0-9]{4})?$" title="Zip code">
 
-      <label for="url">URL:</label>
-      <input type="url" name="url" id="url" value="http://">
+    <label for="url">URL:</label>
+    <input type="url" name="url" id="url" value="http://">
 
-      <input type="submit" name="submit" value="Send">
-    </form>
-  </body>
+    <input type="submit" name="submit" value="Send">
+  </form>
+</body>
+
 </html>
