@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/master.css">
   </head>
   <body>
+    <h1>Respnsive Web Design</h1>
     <p>It must contain a paragraph (150 words or more) explaining the problems that responsive web design solves, in your own words</p>
 
     <form>
@@ -17,10 +18,35 @@
       <textarea name="biggest-concern" id="biggest-concern" rows="8" cols="80"></textarea>
 
       <label for="email">email</label>
-      <input type="text" name="email" id="email" value="" >
+      <input type="email" name="email" id="email" value="" >
 
       <label for="visitor-count">How many unique visitors does your website receive daily?</label>
       <input type="number" name="visitor-count" id="visitor-count" value="">
+
+
+      <fieldset>
+        <legend>What technologies do you use on your site?</legend>
+
+        <label for="asp">asp.net</label>
+        <input type="checkbox" id="asp" name="asp" value="asp">
+        <label for="asp">asp.net/MVC</label>
+        <input type="checkbox" id="asp-mvc" name="asp" value="mvc">
+        <label for="asp">javascript</label>
+        <input type="checkbox" id="js" name="asp" value="js">
+      </fieldset>
+
+      <fieldset>
+        <legend>What database do you use on your backend?</legend>
+
+        <label for="ms-sql">Microsoft SQL</label>
+        <input type="radio" id="ms-sql" name="sql" value="ms-sql">
+        <label for="my-sql">My SQL</label>
+        <input type="radio" id="my-sql" name="sql" value="my-sql">
+        <label for="no-sql">No sql</label>
+        <input type="radio" checked id="no-sql" name="sql" value="no-sql">
+      </fieldset>
+
+      <input type="submit" name="submit" value="Send">
     </form>
   </body>
 </html>
