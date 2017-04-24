@@ -39,21 +39,23 @@
     color blind or completely blind.
   </p>
 
-  <p>Finally, a responsive web design gives (as much as possible) a consistent 
+  <p>Finally, a responsive web design gives (as much as possible) a consistent
     user experience without using customized code.
   </p>
 
 
+  <h1>Forms</h1>
+
   <form>
     <label for="why-interested">
         Why are you interested in making your website responsive?</label>
-    <textarea name="why-interested" id="why-interested" rows="8" cols="80"></textarea>
+    <textarea name="why-interested" id="why-interested" required rows="8" cols="80"></textarea>
 
     <label for="biggest-concern">What is your biggest concern with your current website?</label>
-    <textarea name="biggest-concern" id="biggest-concern" rows="8" cols="80"></textarea>
+    <textarea name="biggest-concern" id="biggest-concern" required rows="8" cols="80"></textarea>
 
     <label for="email">email</label>
-    <input type="email" name="email" id="email" value="">
+    <input type="email" name="email" id="email" required value="">
 
     <label for="visitor-count">How many unique visitors does your website receive daily?</label>
     <input type="number" name="visitor-count" id="visitor-count" value="">
@@ -61,6 +63,8 @@
 
     <fieldset>
       <legend>What technologies do you use on your site?</legend>
+      <input type="checkbox" id="html" name="html" value="1">
+      <label for="html">html</label>
 
       <input type="checkbox" id="asp" name="asp" value="1">
       <label for="asp">asp.net</label>
@@ -73,18 +77,19 @@
 
       <input type="checkbox" id="js" name="js" value="1">
       <label for="js">javascript</label>
+      <input type="checkbox" id="css" name="css" value="1">
+      <label for="css">css</label>
     </fieldset>
 
     <fieldset>
       <legend>What database do you use on your backend?</legend>
+      <input type="radio" checked id="no-sql" name="sql" value="no-sql" select>
+      <label for="no-sql">No sql</label>
       <input type="radio" id="ms-sql" name="sql" value="ms-sql">
       <label for="ms-sql">Microsoft SQL</label>
 
       <input type="radio" id="my-sql" name="sql" value="my-sql">
       <label for="my-sql">My SQL</label>
-
-      <input type="radio" checked id="no-sql" name="sql" value="no-sql">
-      <label for="no-sql">No sql</label>
     </fieldset>
 
     <label for="server"></label>
@@ -96,11 +101,11 @@
         <option value="l">LightSpeed Web Server</option>
       </select>
 
-    <label for="zipcode">Zip Code</label>
+    <label for="zipcode">Zip Code - pattern validation</label>
     <input type="text" name="zip-code" id="zipcode" pattern="^[0-9]{5}(?:-[0-9]{4})?$" title="Zip code">
 
     <label for="url">URL:</label>
-    <input type="url" name="url" id="url" value="http://">
+    <input type="url" name="url" id="url" value="" required placeholder="http://yourwebsite.com">
 
     <input type="submit" name="submit" value="Send">
   </form>

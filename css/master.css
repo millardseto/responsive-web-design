@@ -4,7 +4,7 @@ body {
   margin-right: 2rem;
 }
 
-input[type="text"], input[type="email"], textarea, select {
+input[type="text"], input[type="email"], input[type="url"], textarea, select {
   display: block;
   margin: .5rem;
 }
