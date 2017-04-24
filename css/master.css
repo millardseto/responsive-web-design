@@ -2,13 +2,15 @@
 body {
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 4rem;
   color: rgb(51, 51, 51);
 }
+
 
 input[type="text"], input[type="email"], input[type="url"], input[type="number"],
 textarea,
 select,
-fieldset{
+fieldset {
   display: block;
-  margin: .5rem;
+
 }

@@ -59,20 +59,28 @@
 
   <h3>Forms</h3>
 
-  <form>
-    <label for="why-interested">
-        Why are you interested in making your website responsive?</label>
-    <textarea name="why-interested" id="why-interested" required rows="8" cols="80"></textarea>
+  <form class="form-horizontal">
+    <!-- Wrap labels and controls in .form-group for optimum spacing. -->
+    <div class="form-group">
+      <label for="why-interested">
+          Why are you interested in making your website responsive?</label>
+      <textarea name="why-interested" id="why-interested" required rows="8" cols="80"></textarea>
+    </div>
 
-    <label for="biggest-concern">What is your biggest concern with your current website?</label>
-    <textarea name="biggest-concern" id="biggest-concern" required rows="8" cols="80"></textarea>
+    <div class="form-group">
+      <label for="biggest-concern">What is your biggest concern with your current website?</label>
+      <textarea name="biggest-concern" id="biggest-concern" required rows="8" cols="80"></textarea>
+    </div>
 
-    <label for="email">E-mail</label>
-    <input type="email" name="email" id="email" required value="">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required value="">
+    </div>
 
-    <label for="visitor-count">How many unique visitors does your website receive daily?</label>
-    <input type="number" name="visitor-count" id="visitor-count" value="">
-
+    <div class="form-group">
+      <label for="visitor-count">How many unique visitors does your website receive daily?</label>
+      <input type="number" name="visitor-count" id="visitor-count" value="">
+    </div>
 
     <fieldset>
       <legend>What technologies do you use on your site?</legend>
@@ -95,7 +103,7 @@
     </fieldset>
 
     <fieldset>
-      <legend>What database do you use on your backend?</legend>
+      <legend>What kind of database do you have?</legend>
       <input type="radio" checked id="no-sql" name="sql" value="no-sql">
       <label for="no-sql">No sql</label>
       <input type="radio" id="ms-sql" name="sql" value="ms-sql">
@@ -105,22 +113,29 @@
       <label for="my-sql">My SQL</label>
     </fieldset>
 
-    <label for="server"></label>
-    <select class="" name="server" id="server">
-        <option value="i">Internet Information Services (IIS)</option>
-        <option value="a">Apache</option>
-        <option value="j">Sun Java System Web Server</option>
-        <option value="n">Nginx Web Server</option>
-        <option value="l">LightSpeed Web Server</option>
-      </select>
+    <div class="form-group">
+      <label for="server">Server</label>
+      <select class="" name="server" id="server">
+          <option value="i">Internet Information Services (IIS)</option>
+          <option value="a">Apache</option>
+          <option value="j">Sun Java System Web Server</option>
+          <option value="n">Nginx Web Server</option>
+          <option value="l">LightSpeed Web Server</option>
+        </select>
+    </div>
 
-    <label for="zipcode">Zip Code - pattern validation</label>
-    <input type="text" name="zip-code" id="zipcode" pattern="^[0-9]{5}(?:-[0-9]{4})?$" title="Zip code">
+    <div class="form-group">
+      <label for="zipcode">Zip Code - pattern validation</label>
+      <input type="text" name="zip-code" id="zipcode" pattern="^[0-9]{5}(?:-[0-9]{4})?$" title="Zip code">
+    </div>
 
-    <label for="url">URL:</label>
-    <input type="url" name="url" id="url" value="" required placeholder="http://yourwebsite.com">
+    <div class="form-group">
+      <label for="url">URL:</label>
+      <input type="url" name="url" id="url" value="" required placeholder="http://yourwebsite.com">
+    </div>
 
-    <input type="submit" name="submit" value="Send">
+    <button type="submit" class="btn btn-default">Submit</button>
+
   </form>
 
   <!-- BOOTSTRAP - Latest compiled and minified JavaScript -->
