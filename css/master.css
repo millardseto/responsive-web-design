@@ -12,5 +12,8 @@ textarea,
 select,
 fieldset {
   display: block;
+}
 
+form {
+  margin-left: 2rem;
 }
