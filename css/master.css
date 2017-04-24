@@ -4,7 +4,10 @@ body {
   margin-right: 2rem;
 }
 
-input[type="text"], input[type="email"], input[type="url"], textarea, select {
+input[type="text"], input[type="email"], input[type="url"], input[type="number"],
+textarea,
+select,
+fieldset{
   display: block;
   margin: .5rem;
 }
